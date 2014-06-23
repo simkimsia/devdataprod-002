@@ -14,7 +14,7 @@ mode        : selfcontained # {standalone, draft}
 
 1. Agenda
 2. How the Calculator works in terms of mathematics
-3. Link to the actual app
+3. Actual Implementation of logic
 4. Possible improvements
 5. Contact us
 
@@ -60,6 +60,4 @@ returns <- function(principal, annual_interest_rate, n, t) {
 ## Contact us
 
 Find us on Twitter <a href="https://twitter.com/KimStacks">@KimStacks</a>
-
----
 
