@@ -29,7 +29,7 @@ mode        : selfcontained # {standalone, draft}
 
 ## How it works
 
-$$Value = Principal (1 + \frac{rate/n}\)^nt $$
+$$Value = Principal (1 + \frac{rate}n)^{nt} $$
 
 Where 
  1. rate is the decimal representation of the interest rate. E.g. 3% means 0.03
@@ -40,7 +40,7 @@ Where
 
 ## Actual implementation of logic
 
-``{r}
+```
 returns <- function(principal, annual_interest_rate, n, t) {
     rate <- annual_interest_rate / 100
     principal * ( (1 + (rate/n))^(n * t) )
