@@ -54,42 +54,31 @@
 <li>Contact us</li>
 </ol>
 
-  </article>
-  <!-- Presenter Notes -->
-</slide>
+<h2>Agenda</h2>
 
-<slide class="class" id="id" style="background:;">
-  <hgroup>
-    <h2>Agenda</h2>
-  </hgroup>
-  <article data-timings="">
-    <ol>
+<ol>
 <li>The world needs a calculator to find out the compound interest and the eventual investment</li>
 <li>Or loan..</li>
 </ol>
 
-  </article>
-  <!-- Presenter Notes -->
-</slide>
+<h2>How it works</h2>
 
-<slide class="class" id="id" style="background:;">
-  <hgroup>
-    <h2>How it works</h2>
-  </hgroup>
-  <article data-timings="">
-    <pre><code>$$Value = Principal * ( (1 + (rate/n))^(n * t) )$$
+<p>``
+\[Value = Principal * ( (1 + (rate/n))^(n * t) )\]</p>
 
+<pre><code>Where 
+ 1. rate is the decimal representation of the interest rate. E.g. 3% means 0.03
+ 2. n is the number of times in a year the interest is compounded
+ 3. t is the number of years
+
+## Actual implementation of logic
+
+``{r}
+returns &lt;- function(principal, annual_interest_rate, n, t) {
+    rate &lt;- annual_interest_rate / 100
+    principal * ( (1 + (rate/n))^(n * t) )
+}
 </code></pre>
-
-<p>Where </p>
-
-<ol>
-<li>rate is the decimal representation of the interest rate. E.g. 3% means 0.03</li>
-<li>n is the number of times in a year the interest is compounded</li>
-<li>t is the number of years</li>
-</ol>
-
-<p>--- .class #id </p>
 
 <h2>Possible improvements</h2>
 
@@ -99,16 +88,9 @@
 <li>Will educate people how much they need to save</li>
 </ol>
 
-  </article>
-  <!-- Presenter Notes -->
-</slide>
+<h2>Contact us</h2>
 
-<slide class="class" id="id" style="background:;">
-  <hgroup>
-    <h2>Contact us</h2>
-  </hgroup>
-  <article data-timings="">
-    <p>Find us on Twitter <a href="https://twitter.com/KimStacks">@KimStacks</a></p>
+<p>Find us on Twitter <a href="https://twitter.com/KimStacks">@KimStacks</a></p>
 
   </article>
   <!-- Presenter Notes -->
@@ -122,24 +104,6 @@
       <a href="#" target="_self" rel='tooltip' 
         data-slide=1 title='The Compound Interest Calculator'>
          1
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_self" rel='tooltip' 
-        data-slide=2 title='Agenda'>
-         2
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_self" rel='tooltip' 
-        data-slide=3 title='How it works'>
-         3
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_self" rel='tooltip' 
-        data-slide=4 title='Contact us'>
-         4
       </a>
     </li>
   </ul>

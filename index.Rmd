@@ -18,18 +18,14 @@ mode        : selfcontained # {standalone, draft}
 4. Possible improvements
 5. Contact us
 
---- .class #id 
-
 ## Agenda
 
 1. The world needs a calculator to find out the compound interest and the eventual investment
 2. Or loan..
 
---- .class #id 
-
 ## How it works
 
-```
+``
 $$Value = Principal * ( (1 + (rate/n))^(n * t) )$$
 
 ```
@@ -38,15 +34,20 @@ Where
  2. n is the number of times in a year the interest is compounded
  3. t is the number of years
  
---- .class #id 
+## Actual implementation of logic
+
+``{r}
+returns <- function(principal, annual_interest_rate, n, t) {
+    rate <- annual_interest_rate / 100
+    principal * ( (1 + (rate/n))^(n * t) )
+}
+```
 
 ## Possible improvements
 
  1. Next stage we want to allow people to calculate their retirement savings
  2. Will take into consideration the savings rate and inflation rate compounded
  3. Will educate people how much they need to save
-
---- .class #id 
 
 ## Contact us
 
