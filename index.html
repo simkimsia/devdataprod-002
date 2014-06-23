@@ -54,44 +54,89 @@
 <li>Contact us</li>
 </ol>
 
-<h2>Agenda</h2>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
 
-<ol>
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Agenda</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
 <li>The world needs a calculator to find out the compound interest and the eventual investment</li>
 <li>Or loan..</li>
 </ol>
 
-<h2>How it works</h2>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
 
-<p>``
-\[Value = Principal * ( (1 + (rate/n))^(n * t) )\]</p>
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>How it works</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>\[Value = Principal * ( (1 + (rate/n))^(n * t) )\]</p>
 
-<pre><code>Where 
- 1. rate is the decimal representation of the interest rate. E.g. 3% means 0.03
- 2. n is the number of times in a year the interest is compounded
- 3. t is the number of years
-
-## Actual implementation of logic
-
-``{r}
-returns &lt;- function(principal, annual_interest_rate, n, t) {
-    rate &lt;- annual_interest_rate / 100
-    principal * ( (1 + (rate/n))^(n * t) )
-}
-</code></pre>
-
-<h2>Possible improvements</h2>
+<p>Where </p>
 
 <ol>
+<li>rate is the decimal representation of the interest rate. E.g. 3% means 0.03</li>
+<li>n is the number of times in a year the interest is compounded</li>
+<li>t is the number of years</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Actual implementation of logic</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>``{r}
+returns &lt;- function(principal, annual_interest_rate, n, t) {
+    rate &lt;- annual_interest_rate / 100
+    principal * ( (1 + (rate/n))<sup>n * t</sup> )
+}</p>
+
+<pre><code></code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-5" style="background:;">
+  <hgroup>
+    <h2>Possible improvements</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
 <li>Next stage we want to allow people to calculate their retirement savings</li>
 <li>Will take into consideration the savings rate and inflation rate compounded</li>
 <li>Will educate people how much they need to save</li>
 </ol>
 
-<h2>Contact us</h2>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
 
-<p>Find us on Twitter <a href="https://twitter.com/KimStacks">@KimStacks</a></p>
+<slide class="" id="slide-6" style="background:;">
+  <hgroup>
+    <h2>Contact us</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Find us on Twitter <a href="https://twitter.com/KimStacks">@KimStacks</a></p>
 
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-7" style="background:;">
+  <article data-timings="">
+    
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -104,6 +149,42 @@ returns &lt;- function(principal, annual_interest_rate, n, t) {
       <a href="#" target="_self" rel='tooltip' 
         data-slide=1 title='The Compound Interest Calculator'>
          1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Agenda'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='How it works'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Actual implementation of logic'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Possible improvements'>
+         5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='Contact us'>
+         6
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title=''>
+         7
       </a>
     </li>
   </ul>
